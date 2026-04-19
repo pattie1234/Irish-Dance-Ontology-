@@ -1,0 +1,1301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/irishdance/"
+     xml:base="http://example.org/irishdance/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:irishdance="http://example.org/irishdance#">
+    <owl:Ontology rdf:about="http://example.org/irishdance"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/irishdance#adjudicates -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#adjudicates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Adjudicator"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#belongsToSchool -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#belongsToSchool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://example.org/irishdance#ownsSchool"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#coaches -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#coaches">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Teacher"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Dancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#dancesIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#dancesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Teacher"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Dancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasDancer -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasDancer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#School"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Dancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasGradeLevel -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasGradeLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasJudgingCriteria -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasJudgingCriteria">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Competition"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#JudgingCriteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Competition"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Dancer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasRegistrationStatus -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasRegistrationStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Person"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasTeacher -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#hasTeacher">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#School"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#isAdjudicatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#isAdjudicatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Competition"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Adjudicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#isOwnedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://example.org/irishdance#ownsSchool"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#School"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#isPerformedTo -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#isPerformedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#DanceType"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#isTaughtBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#ownsSchool -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#ownsSchool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Teacher"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#performedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Music"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Musician"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#performsDanceType -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#performsDanceType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#wearsAccessories -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#wearsAccessories">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/irishdance#wearsCostume -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/irishdance#wearsCostume">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#Costume"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://example.org/irishdance#School"/>
+        <rdfs:range rdf:resource="http://example.org/irishdance#RegistrationStatus"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/irishdance#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Dancer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasCompetitionName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasCompetitionName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Competition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasSchoolName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasSchoolName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/irishdance#School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/irishdance#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/irishdance#hasYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://example.org/irishdance#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/irishdance#Accessories -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Accessories"/>
+    
+
+
+    <!-- http://example.org/irishdance#AccessoriesCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#AccessoriesCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#AccomodationCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#AccomodationCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Accuracy -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TechnicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Adjudicator -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Adjudicator">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Person"/>
+        <owl:disjointWith rdf:resource="http://example.org/irishdance#Dancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#AdjudicatorRole -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#AdjudicatorRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ArtisticCriteria -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ArtisticCriteria">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#JudgingCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#BeginnerGrade -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#BeginnerGrade">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Carriage -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Carriage">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TechnicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Ceili -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Ceili">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#CeiliMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#CeiliMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ChamptionshipGrade -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ChamptionshipGrade">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Choreography -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Choreography">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#ArtisticCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ChoreographyTraining -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ChoreographyTraining">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Competition -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Competition">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/irishdance#hasParticipant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/irishdance#Dancer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Confidence -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Confidence">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#PerformanceQualityCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Costs -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Costs"/>
+    
+
+
+    <!-- http://example.org/irishdance#Costume -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Costume"/>
+    
+
+
+    <!-- http://example.org/irishdance#CostumeCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#CostumeCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#CulturalEvent -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#CulturalMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#CulturalMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#DanceMovesTraining -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#DanceMovesTraining">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#DanceRole -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#DanceRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#DanceStyle -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#DanceStyle"/>
+    
+
+
+    <!-- http://example.org/irishdance#DanceType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#DanceType">
+        <owl:disjointWith rdf:resource="http://example.org/irishdance#Unregistered"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Dancer -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Dancer">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/irishdance#belongsToSchool"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/irishdance#School"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Event -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Event"/>
+    
+
+
+    <!-- http://example.org/irishdance#EventEntryCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#EventEntryCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Exhibition -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Exhibition">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ExhibitionCostume -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ExhibitionCostume">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ExhibitionMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ExhibitionMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Extension -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Extension">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TechnicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Figure -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Figure">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#FlexibilityTraining -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#FlexibilityTraining">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#GradeLevel -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#GradeLevel"/>
+    
+
+
+    <!-- http://example.org/irishdance#HairAccessories -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#HairAccessories">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#HeavyJig -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#HeavyJig">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Hornpipe -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Hornpipe">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeTimeSetDance -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#HornpipeTimeSetDance">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#SetDanceType"/>
+        <owl:disjointWith rdf:resource="http://example.org/irishdance#JigTimeSetDance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#HornpipeType">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#MusicRhythmType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#IntermediateGrade -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#IntermediateGrade">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#JigTimeSetDance -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#JigTimeSetDance">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#SetDanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#JigType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#JigType">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#MusicRhythmType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#JudgingCriteria -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#JudgingCriteria"/>
+    
+
+
+    <!-- http://example.org/irishdance#LightJig -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#LightJig">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Makeup -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Makeup">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Music -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Music"/>
+    
+
+
+    <!-- http://example.org/irishdance#MusicRhythmType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#MusicRhythmType"/>
+    
+
+
+    <!-- http://example.org/irishdance#MusicalInterpretation -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#MusicalInterpretation">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#ArtisticCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Musician -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Musician">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#MusicianRole -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#MusicianRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#OpenGrade -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#OpenGrade">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ParentRole -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ParentRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#PerformanceQualityCriteria -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#PerformanceQualityCriteria">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#JudgingCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Person -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Person"/>
+    
+
+
+    <!-- http://example.org/irishdance#Poise -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Poise">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#ArtisticCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Posture -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Posture">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#PerformanceQualityCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Presentation -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Presentation">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#ArtisticCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#PrimaryGrade -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#PrimaryGrade">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#GradeLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Reel -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Reel">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Registered -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Registered">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#RegistrationStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#RegistrationStatus -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#RegistrationStatus"/>
+    
+
+
+    <!-- http://example.org/irishdance#Rehearsal -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Rehearsal">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Rhythm -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Rhythm">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TechnicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Role -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Role"/>
+    
+
+
+    <!-- http://example.org/irishdance#School -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#School">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/irishdance#hasDancer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/irishdance#Dancer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/irishdance#hasTeacher"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/irishdance#Teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SetDanceMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SetDanceMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SetDanceType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SetDanceType">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SetDancing -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SetDancing">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Shoes -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Shoes">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Show -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Show">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ShowCostume -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ShowCostume">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#ShowMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#ShowMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SingleJig -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SingleJig">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SlipgigType -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SlipgigType">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#MusicRhythmType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Slipjig -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Slipjig">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Socks -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Socks">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Solo -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Solo">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#DanceStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SoloCostume -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SoloCostume">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#SoloMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#SoloMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#StagePerformance -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#StagePerformance">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#PerformanceQualityCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#StaminaTraining -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#StaminaTraining">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#StrengthTraining -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#StrengthTraining">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TrainingEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Style -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Style">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#ArtisticCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Teacher -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Teacher">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TeacherRole -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TeacherRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TeamCostume -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TeamCostume">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TeamMusic -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TeamMusic">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TechnicalCriteria -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TechnicalCriteria">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#JudgingCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Timing -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Timing">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#TechnicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TrainingCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TrainingCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TrainingEvent -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TrainingEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#TransportationCosts -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#TransportationCosts">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Costs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Unregistered -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Unregistered">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#RegistrationStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/irishdance#Wigs -->
+
+    <owl:Class rdf:about="http://example.org/irishdance#Wigs">
+        <rdfs:subClassOf rdf:resource="http://example.org/irishdance#Accessories"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/irishdance#Competition001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Competition001">
+        <rdf:type rdf:resource="http://example.org/irishdance#Competition"/>
+        <irishdance:hasLocation>&quot;Glasgow&quot;</irishdance:hasLocation>
+        <irishdance:hasName>World Dance Champtionships</irishdance:hasName>
+        <irishdance:hasYear>&quot;2026&quot;</irishdance:hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Competition002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Competition002">
+        <rdf:type rdf:resource="http://example.org/irishdance#Competition"/>
+        <irishdance:hasLocation>&quot;Dublin&quot;</irishdance:hasLocation>
+        <irishdance:hasName>&quot;All Ireland dance Champtionships&quot;</irishdance:hasName>
+        <irishdance:hasYear>&quot;2025&quot;</irishdance:hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Dancer_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Dancer_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#Dancer"/>
+        <irishdance:hasAge>&quot;10&quot;</irishdance:hasAge>
+        <irishdance:hasName>&quot;Mary Browne&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Dancer_002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Dancer_002">
+        <rdf:type rdf:resource="http://example.org/irishdance#Dancer"/>
+        <irishdance:belongsToSchool rdf:resource="http://example.org/irishdance#EliteDanceAcadamy"/>
+        <irishdance:hasAge>&quot;12&quot;</irishdance:hasAge>
+        <irishdance:hasName>&quot;John Doe&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#DeiseDanceAcademy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#DeiseDanceAcademy"/>
+    
+
+
+    <!-- http://example.org/irishdance#DesiseDanceAcadamy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#DesiseDanceAcadamy">
+        <rdf:type rdf:resource="http://example.org/irishdance#School"/>
+        <irishdance:isOwnedBy rdf:resource="http://example.org/irishdance#Teacher_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#EliteDanceAcadamy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#EliteDanceAcadamy">
+        <rdf:type rdf:resource="http://example.org/irishdance#School"/>
+        <irishdance:isOwnedBy rdf:resource="http://example.org/irishdance#Teacher_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeSetDance_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#HornpipeSetDance_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#HornpipeTimeSetDance"/>
+        <irishdance:hasName>&quot;The DownFall of Paris&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeSetDance_002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#HornpipeSetDance_002">
+        <rdf:type rdf:resource="http://example.org/irishdance#HornpipeTimeSetDance"/>
+        <irishdance:hasName>&quot;The Hunt&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeSetDance_003 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#HornpipeSetDance_003">
+        <rdf:type rdf:resource="http://example.org/irishdance#HornpipeTimeSetDance"/>
+        <irishdance:hasName>&quot;The Piper Through the Meadow Straying&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#HornpipeSetDance_004 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#HornpipeSetDance_004">
+        <rdf:type rdf:resource="http://example.org/irishdance#HornpipeTimeSetDance"/>
+        <irishdance:hasName>&quot;The Kilkenny Races&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#JigTimeSetDance_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#JigTimeSetDance_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#JigTimeSetDance"/>
+        <irishdance:hasName>&quot;The Blackthorn Stick&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#JigTimeSetDance_002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#JigTimeSetDance_002">
+        <rdf:type rdf:resource="http://example.org/irishdance#JigTimeSetDance"/>
+        <irishdance:hasName>&quot;The Drunken Gauger&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#JuniorDance002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#JuniorDance002">
+        <rdf:type rdf:resource="http://example.org/irishdance#Dancer"/>
+        <irishdance:belongsToSchool rdf:resource="http://example.org/irishdance#EliteDanceAcadamy"/>
+        <irishdance:isTaughtBy rdf:resource="http://example.org/irishdance#Teacher_002"/>
+        <irishdance:hasAge>&quot;21&quot;</irishdance:hasAge>
+        <irishdance:hasCompetitionName>&quot;Munster Champtionships&quot;</irishdance:hasCompetitionName>
+        <irishdance:hasName>Luka Lawlor</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#JuniorDancer_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#JuniorDancer_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#Dancer"/>
+        <irishdance:belongsToSchool rdf:resource="http://example.org/irishdance#PremierDanceAcadamy"/>
+        <irishdance:isTaughtBy rdf:resource="http://example.org/irishdance#Teacher_001"/>
+        <irishdance:hasAge>&quot;23&quot;</irishdance:hasAge>
+        <irishdance:hasCompetitionName>&quot;Munster Champtionships&quot;</irishdance:hasCompetitionName>
+        <irishdance:hasName>&quot;Amelia Lawlor&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#PremierDanceAcadamy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#PremierDanceAcadamy">
+        <rdf:type rdf:resource="http://example.org/irishdance#School"/>
+        <irishdance:isOwnedBy rdf:resource="http://example.org/irishdance#Teacher_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#SeniorDancer_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#SeniorDancer_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#Dancer"/>
+        <irishdance:belongsToSchool rdf:resource="http://example.org/irishdance#DeiseDanceAcademy"/>
+        <irishdance:hasAge>&quot;30&quot;</irishdance:hasAge>
+        <irishdance:hasCompetitionName>&quot;Leinster Champtionships&quot;</irishdance:hasCompetitionName>
+        <irishdance:hasName>Ashleigh Lawlor</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Teacher_001 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Teacher_001">
+        <rdf:type rdf:resource="http://example.org/irishdance#Teacher"/>
+        <irishdance:coaches rdf:resource="http://example.org/irishdance#Dancer_001"/>
+        <irishdance:coaches rdf:resource="http://example.org/irishdance#JuniorDancer_001"/>
+        <irishdance:ownsSchool rdf:resource="http://example.org/irishdance#PremierDanceAcadamy"/>
+        <irishdance:hasName>&quot;Regina Lawlor&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Teacher_002 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Teacher_002">
+        <rdf:type rdf:resource="http://example.org/irishdance#Teacher"/>
+        <irishdance:coaches rdf:resource="http://example.org/irishdance#Dancer_002"/>
+        <irishdance:ownsSchool rdf:resource="http://example.org/irishdance#EliteDanceAcadamy"/>
+        <irishdance:hasName>&quot;Olivia Lawlor&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/irishdance#Teacher_003 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/irishdance#Teacher_003">
+        <rdf:type rdf:resource="http://example.org/irishdance#Teacher"/>
+        <irishdance:coaches rdf:resource="http://example.org/irishdance#JuniorDance002"/>
+        <irishdance:coaches rdf:resource="http://example.org/irishdance#SeniorDancer_001"/>
+        <irishdance:ownsSchool rdf:resource="http://example.org/irishdance#DeiseDanceAcademy"/>
+        <irishdance:hasName>&quot;Breda Butler&quot;</irishdance:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
